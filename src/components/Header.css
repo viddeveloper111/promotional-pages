@@ -1,0 +1,32 @@
+.nike-navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.nike-navbar .navbar-brand {
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #111;
+}
+
+.nike-navbar .nav-link-custom {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #111 !important;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.nike-navbar .nav-link-custom:hover {
+  color: #888 !important;
+}
+
+.nike-navbar .nav-link svg {
+  color: #111;
+  transition: color 0.3s ease;
+}
+
+.nike-navbar .nav-link:hover svg {
+  color: #888;
+}
