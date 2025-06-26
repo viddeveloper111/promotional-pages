@@ -15,6 +15,7 @@ const Header = () => {
 
         
         <Navbar.Collapse id="basic-navbar-nav" className='d-block'>
+          <Nav className="me-auto"></Nav>
           
           <Nav className="mx-auto my-2 my-lg-0" align-item='center'> 
             <Nav.Link href="#new-featured" className="text-dark fw-bold nav-link-custom">New & Featured</Nav.Link>
