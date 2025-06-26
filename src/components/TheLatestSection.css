@@ -1,17 +1,17 @@
 .the-latest-section {
   padding: 4rem 0;
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
-.the-latest-section .container { /* Target the Bootstrap Container */
-    padding-left: 15px; /* Example: Reduce left padding */
+.the-latest-section .container { 
+    padding-left: 15px;
     padding-right: 15px;
-}
+}s
 
 .the-latest-section .section-title {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 2.2rem;
-  font-weight: 800;
+  font-size: 1.8rem;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 4rem;
   text-transform: uppercase;
@@ -27,7 +27,7 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 2.5rem;
-  border-radius: 8px;
+  border-radius: 0px;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease;
