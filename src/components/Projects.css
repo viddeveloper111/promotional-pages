@@ -1,0 +1,35 @@
+.behance-pill {
+    background-color: #e0e0e0; 
+    color: #555;
+    border: none;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+}
+.behance-pill:hover, .behance-pill:focus {
+    background-color: #d0d0d0; 
+    color: #333;
+    box-shadow: none;
+    outline: none;
+}
+.behance-pill.active {
+    background-color: #0055f7 !important; 
+    color: white !important;
+}
+
+.project-card-hover {
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.project-card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+.hover-opacity-100 {
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+}
+.project-card-hover:hover .hover-opacity-100 {
+    opacity: 1; 
+}

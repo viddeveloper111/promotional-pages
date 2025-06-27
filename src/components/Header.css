@@ -1,0 +1,135 @@
+.active-behance-nav {
+    border-bottom: 2px solid #0055f7; /* Behance primary blue underline */
+    color: #0055f7 !important;
+    font-weight: 600 !important;
+}
+
+.btn-behance-gradient {
+    background: linear-gradient(to right, #0055f7, #007bff); /* blue gradient */
+    border: none;
+    color: white;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+.btn-behance-gradient:hover {
+    background: linear-gradient(to right, #0044cc, #0069d9); /*dark gradient on hovering the button */
+    color: white;
+}
+
+.btn-behance-signin {
+    color: #0055f7 !important;
+    border: none !important;
+    background-color: transparent !important; 
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-behance-signin:hover, .btn-behance-signin:focus {
+    background-color: rgba(0, 85, 247, 0.1) !important; /* Light blue background on hover/focus */
+    color: #0055f7 !important; /* Keep text blue */
+    box-shadow: none !important; /* Remove default Bootstrap focus shadow */
+}
+
+/* General dropdown toggle arrow removal for custom icon */
+.dropdown-arrow-icon.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Specific styles for the custom Adobe popover */
+.adobe-custom-popover {
+    width: 320px; /* Adjust width as per screenshot */
+    border: 1px solid #ddd;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1); /* Lighter shadow */
+}
+.adobe-custom-popover a {
+    padding: 0.75rem 1rem; /* More padding for internal links */
+    transition: background-color 0.2s;
+}
+.adobe-custom-popover a:hover {
+    background-color: #f0f0f0; /* Light hover effect for internal links */
+}
+
+/* Filter button styling to match screenshot */
+.filter-button {
+    background-color: #e9ecef; /* Light gray background */
+    border-color: #ced4da; /* Light border */
+    font-weight: 500;
+    color: #333 !important; /* Darker text */
+    transition: background-color 0.2s, border-color 0.2s;
+    border-radius: 2rem !important; /* Fully rounded corners */
+    padding: 0.5rem 1rem !important; /* Adjust padding */
+    height: 40px; /* Match height of search bar */
+}
+.filter-button:hover, .filter-button:focus {
+    background-color: #d0d0d0; /* Slightly darker on hover */
+    border-color: #b0b0b0;
+    box-shadow: none; /* Remove default Bootstrap focus shadow */
+}
+
+/* Custom search input group styling to match screenshot */
+.behance-search-input-group {
+    background-color: #e9ecef; /* Light gray background for the entire input group */
+    border: 1px solid #ced4da;
+    border-radius: 2rem; /* Fully rounded corners for the entire group */
+    display: flex;
+    align-items: center;
+    height: 40px; /* Standard height for the search bar */
+    overflow: hidden; /* Important for border-radius on children */
+}
+.behance-search-input-group .input-group-text {
+    background-color: transparent; /* Transparent background for the icon area */
+    border: none;
+    padding-right: 0;
+    padding-left: 1rem;
+}
+.behance-search-input-group .form-control {
+    background-color: transparent; /* Transparent background for the input field itself */
+    border: none;
+    padding-left: 0;
+    height: 100%; /* Make input fill its parent */
+    box-shadow: none !important;
+}
+.behance-search-input-group .form-control:focus {
+    border-color: transparent;
+    background-color: transparent;
+}
+.behance-search-input-group .form-control::placeholder {
+    color: #888;
+}
+
+/* Styling for buttons inside the search input group (Projects, People) */
+.behance-segment-button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem !important; /* Adjust padding for better look */
+    background-color: transparent !important; /* Ensure transparent background */
+    border: none !important; /* Remove individual button borders */
+    color: #333 !important; /* Dark text */
+    font-weight: 500 !important;
+    border-radius: 0 !important; /* Remove individual button border-radius */
+    border-right: 1px solid #ced4da !important; /* Add divider */
+    white-space: nowrap; /* Prevent wrapping */
+}
+.behance-segment-button:hover {
+    background-color: rgba(0,0,0,0.05) !important; /* Slight hover effect */
+}
+
+/* Styling for the dropdown inside the search input group (More) */
+.input-group-behance-dropdown .dropdown-toggle {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem !important; /* Adjust padding for better look */
+    background-color: transparent !important; /* Ensure transparent background */
+    border: none !important; /* Remove individual button borders */
+    color: #333 !important; /* Dark text */
+    font-weight: 500 !important;
+    border-radius: 0 !important; /* Remove individual button border-radius */
+}
+.input-group-behance-dropdown .dropdown-toggle:hover {
+    background-color: rgba(0,0,0,0.05) !important; /* Slight hover effect */
+}
+.input-group-behance-dropdown:last-child .dropdown-toggle {
+    border-top-right-radius: 2rem !important; /* Round the last toggle's right side */
+    border-bottom-right-radius: 2rem !important;
+}

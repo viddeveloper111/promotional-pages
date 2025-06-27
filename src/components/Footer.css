@@ -1,0 +1,16 @@
+.footer-behance-bg {
+    background-color: #000000; /* darkish background matching behance footer */
+    color: #ffffff; /* light grey text */
+}
+
+.footer-behance-logo-text {
+    color: #ffffff;
+}
+
+.list-unstyled li {
+    margin-bottom: 1rem; /* small margins between list items */
+}
+
+
+
+
