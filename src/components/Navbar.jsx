@@ -20,7 +20,7 @@ const Navbar = () => {
         style={{
           background: `linear-gradient(to bottom, #000000, #090214, #1a1a2e, #233554, #2f3d56),
                        radial-gradient(50% 50% at 50% 50%, rgba(158, 110, 230, 0.28) 0%, rgba(158, 110, 230, 0) 100%)`,
-          minHeight: '100vh',
+          minHeight: 'vh',
           color: 'white',
           overflowX: 'hidden',
           fontFamily: "'Helvetica Neue', sans-serif",
@@ -28,19 +28,22 @@ const Navbar = () => {
       >
         {/* Navbar */}
         <nav
-        
-          className="navbar navbar-expand-lg navbar-dark sticky-top px-5 py-3 p"
+          className="navbar navbar-expand-lg navbar-dark px-5 py-3"
           style={{
             backgroundColor: '#000',
             borderBottom: '1px solid rgba(255, 255, 255, 0.06)',
             backdropFilter: 'blur(12px)',
-            zIndex: 1000,
+            zIndex: 9999,
+            position: 'fixed',
+            top: 0,
+            width: '100%',
+            left: 0,
           }}
         >
-          <div className="container-fluid d-flex justify-content-between align-items-center ">
+          <div className="container-fluid d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-center gap-4">
               <a
-                className="navbar-brand "
+                className="navbar-brand"
                 href="#"
                 style={{
                   fontWeight: 'unset',
@@ -48,7 +51,6 @@ const Navbar = () => {
                   letterSpacing: '0.4rem',
                   textTransform: 'uppercase',
                   color: 'white',
-                  
                 }}
               >
                 SUPERHUMAN
@@ -85,10 +87,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            <button
-              className="btn btn-primary px-3  gradient-btn d-none d-lg-block"
-              style={gradientBtn}
-            >
+            <button className="btn btn-primary px-3 gradient-btn d-none d-lg-block" style={gradientBtn}>
               Get Started
             </button>
 
@@ -106,7 +105,7 @@ const Navbar = () => {
         {/* Hero Section */}
         <section
           className="hero-section d-flex flex-column align-items-center justify-content-center text-center px-3"
-          style={{ minHeight: '80vh' }}
+          style={{ minHeight: '80vh', paddingTop: '100px' }} // extra space to avoid overlap
         >
           <div
             className="event-banner mb-4 px-3 py-2 rounded-3 fw-semibold"

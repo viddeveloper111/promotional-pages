@@ -1,139 +1,55 @@
-import React, { useEffect, useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
 
-const ImpactSection = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const sectionStyle = {
-    position: 'relative',
-    minHeight: '100vh',
-    padding: '4rem 1rem',
-    background: 'linear-gradient(90deg, #1a1124 0%, #0b1b22 100%)',
-    overflow: 'hidden',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    textAlign: 'center',
-    color: '#ffffff',
-  };
-
-  const background15MStyle = {
-    fontSize: '20vw',
-    fontWeight: 800,
-    opacity: 0.05,
-    color: '#ffffff',
-    letterSpacing: '-0.05em',
-    lineHeight: 1,
-    margin: 0,
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    whiteSpace: 'nowrap',
-  };
-
-  const impactTextStyle = {
-    position: 'relative',
-    zIndex: 1,
-    fontSize: '2rem',
-    fontWeight: 700,
-    maxWidth: '800px',
-    margin: '0 auto',
-    marginBottom: '80px',
-  };
-
-  const highlightStyle = {
-    background: 'linear-gradient(90deg, #e4b34b, #e87b87)',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
-  };
-
-  const rowWrapperStyle = {
-    overflow: 'hidden',
-    whiteSpace: 'nowrap',
-    width: '100%',
-    padding: '10px 0',
-    marginBottom: '20px',
-    position: 'relative',
-  };
-
-  const tagStyle = {
-    display: 'inline-block',
-    padding: '10px 20px',
-    margin: '0 10px',
-    borderRadius: '10px',
-    fontWeight: '500',
-    color: 'white',
-    whiteSpace: 'nowrap',
-    cursor: 'default',
-    transition: 'transform 0.2s ease',
-  };
-
-  const row1Tags = ['Product', 'People', 'Design', 'Sales', 'Finance', 'Customer Success'];
-  const row2Tags = ['Engineering', 'Operations', 'Marketing', 'Leadership', 'Analytics', 'Growth'];
-
-  const scrollSpeed = 0.3;
-
-  const createLoopedRow = (tags, direction, gradient) => {
-    const offset = (scrollY * scrollSpeed) % (tags.length * 180); // 180px approx width per tag
-    const transformX = direction === 'right' ? offset : -offset;
-
-    return (
-      <div style={{ ...rowWrapperStyle }}>
-        <div
+const HeroSection = () => {
+  return (
+    <section
+      className="d-flex align-items-center justify-content-center vh-100 position-relative text-white"
+      style={{
+        background: `
+          radial-gradient(ellipse at 20% 40%, rgba(90, 60, 120, 0.5) 0%, transparent 60%),
+          linear-gradient(90deg, #1a0924 0%, #09141a 100%)
+        `,
+        overflow: 'hidden',
+      }}
+    >
+      {/* Large faded 15M in background */}
+      <div
+        className="position-absolute w-100 h-100 d-flex align-items-center justify-content-center"
+        style={{
+          top: 0,
+          left: 0,
+          zIndex: 1,
+          pointerEvents: 'none',
+        }}
+      >
+        <span
           style={{
-            transform: `translateX(${transformX}px)`,
-            display: 'inline-flex',
-            willChange: 'transform',
+            fontSize: '22vw',
+            fontWeight: 700,
+            color: 'rgba(255,255,255,0.04)',
+            letterSpacing: '-0.05em',
+            userSelect: 'none',
           }}
         >
-          {[...tags, ...tags].map((tag, idx) => (
-            <span
-              key={`${direction}-${idx}`}
-              style={{
-                ...tagStyle,
-                background: gradient,
-              }}
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
+          15M
+        </span>
       </div>
-    );
-  };
-
-  return (
-    <section style={sectionStyle}>
-      <div className="container position-relative">
-        <h1 style={background15MStyle}>15M</h1>
-        <h2 style={impactTextStyle}>
-          Superhuman saves teams over <span style={highlightStyle}>15 million hours</span>{' '}
-          every single year.
+      {/* Main content */}
+      <div
+        className="container position-relative text-center"
+        style={{ zIndex: 2 }}
+      >
+        <h1 className="display-4 fw-bold mb-3" style={{ fontSize: '2.8rem' }}>
+          Superhuman saves teams over
+        </h1>
+        <h2 className="display-5 fw-bold mb-4" style={{ fontSize: '2.2rem' }}>
+          <span style={{ color: 'rgb(255, 197, 110)' }}>15 million </span>
+          <span style={{ color: 'rgb(255, 143, 143)' }}>hours</span>
+          <span className="text-white"> every single year.</span>
         </h2>
-
-        {/* Infinite loop right */}
-        {createLoopedRow(
-          row1Tags,
-          'right',
-          'linear-gradient(to right, #41295a, #2F0743)'
-        )}
-
-        {/* Infinite loop left */}
-        {createLoopedRow(
-          row2Tags,
-          'left',
-          'linear-gradient(to right, #8e0e00, #1f1c18)'
-        )}
       </div>
     </section>
   );
 };
 
-export default ImpactSection;
+export default HeroSection;

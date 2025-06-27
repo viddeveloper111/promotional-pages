@@ -79,7 +79,13 @@ const HeroSection = () => {
       <div style={scrollWrapper}>
         <div style={scrollingRow('right')}>
           {[...tagList1, ...tagList1].map((tag, idx) => (
-            <span key={`r1-${idx}`} style={{ ...tagStyle, background: 'linear-gradient(to right, #41295a, #2F0743)' }}>
+            <span
+              key={`r1-${idx}`}
+              style={{
+                ...tagStyle,
+                background: 'linear-gradient(90deg, #41295a 0%, #2F0743 100%)'
+              }}
+            >
               {tag}
             </span>
           ))}
@@ -90,7 +96,13 @@ const HeroSection = () => {
       <div style={scrollWrapper}>
         <div style={scrollingRow('left')}>
           {[...tagList2, ...tagList2].map((tag, idx) => (
-            <span key={`r2-${idx}`} style={{ ...tagStyle, background: 'linear-gradient(to right, #8e0e00, #1f1c18)' }}>
+            <span
+              key={`r2-${idx}`}
+              style={{
+                ...tagStyle,
+                background: 'linear-gradient(90deg, #8e0e00 0%, #1f1c18 100%)'
+              }}
+            >
               {tag}
             </span>
           ))}
