@@ -1,6 +1,10 @@
+.headerbg {
+  background-color: #f1f1f1;
+  padding: 9px 0;
+}
 
 .topheader {
-  background-color: gray; 
+  background-color: grey;
   overflow: hidden;
   white-space: nowrap;
   height: 50px;
@@ -10,13 +14,25 @@
   margin-top: 10px;
 }
 
-.marquee-content {
+.scrolling-text {
   display: inline-block;
+  white-space: nowrap;
   padding-left: 100%;
-  animation: scroll-left 20s linear infinite;
-  font-weight: 500;
-  font-size: 16px;
-  color: #000;
-  background: grey;
+  animation: scroll-left 25s linear infinite;
 }
 
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.TOPHEADERR {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}

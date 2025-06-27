@@ -1,77 +1,16 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 30px;
-  background: white;
-  font-family: Arial, sans-serif;
+.logo-letter {
+  font-size: 26px;
+  font-weight: 800;
 }
 
-.left, .center, .right {
-  display: flex;
-  align-items: center;
+.logo-dot {
+  font-size: 20px;
+  font-weight: 800;
+  position: relative;
+  top: -2px;
+  margin-left: 2px;
 }
 
-.left nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 24px;
-  margin-right: 20px;
-}
-
-.new {
-  background: black;
-  color: white;
-  font-size: 10px;
-  padding: 2px 5px;
-  border-radius: 4px;
-  margin-left: 4px;
-}
-
-.search {
-  background: #f1f1f1;
-  padding: 10px 200px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-}
-
-.search input {
-  border: none;
-  background: transparent;
-  margin-left: 8px;
-  outline: none;
-}
-
-.right a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-}
-
-.btn {
-  padding: 8px 14px;
-  margin-left: 10px;
-  border-radius: 8px;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-}
-
-.btn.dark {
-  background: black;
-  color: white;
-}
-
-.btn.light {
-  background: white;
-  color: black;
-  border: 1px solid black;
+.search-bar {
+  width: 450px;
 }

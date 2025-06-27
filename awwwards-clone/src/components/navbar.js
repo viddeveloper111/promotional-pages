@@ -1,34 +1,43 @@
 import React from 'react';
 
-
 const Navbar = () => {
   return (
-    <div className="navbar">
-      <div className="left">
-        <span className="logo">W.</span>
-        <nav>
-          <a href="#">Explore </a>
-          <a href="#">Directory</a>
-          <a href="#">Academy <span className="new">NEW</span></a>
-          <a href="#">Jobs</a>
-          <a href="#">Market</a>
-        </nav>
-      </div>
+    <nav className="navbar navbar-expand-lg bg-white px-4 py-3 border-bottom">
+      <div className="container-fluid d-flex justify-content-between align-items-center">
 
-      <div className="center">
-        <div className="search">
+      
+        <a href="#" className="navbar-brand fw-bold fs-3 text-dark d-flex align-items-center">
+          <span className="logo-letter">W</span><span className="logo-dot">.</span>
+        </a>
+
+        <div className="d-none d-lg-flex align-items-center gap-3 ms-3">
+          <a href="#" className="text-dark text-decoration-none fw-medium">Explore</a>
+          <a href="#" className="text-dark text-decoration-none fw-medium">Directory</a>
+          <a href="#" className="text-dark text-decoration-none fw-medium">
+            Academy <span className="badge bg-dark text-white ms-1">NEW</span>
+          </a>
+          <a href="#" className="text-dark text-decoration-none fw-medium">Jobs</a>
+          <a href="#" className="text-dark text-decoration-none fw-medium">Market</a>
+        </div>
+
         
-          <input type="text" placeholder="Search by Websites" />
+        <div className="search-bar mx-4 d-none d-md-block">
+          <input
+            type="text"
+            className="form-control rounded-pill px-4"
+            placeholder="Search by Websites"
+          />
+        </div>
+
+        
+        <div className="d-flex align-items-center gap-2">
+          <a href="#" className="text-dark text-decoration-none fw-medium">Log in</a>
+          <a href="#" className="text-dark text-decoration-none fw-medium">Sign Up</a>
+          <button className="btn btn-dark rounded-pill px-3">Be Pro</button>
+          <button className="btn btn-outline-dark rounded-pill px-3">Submit Website</button>
         </div>
       </div>
-
-      <div className="right">
-        <a href="#">Log in</a>
-        <a href="#">Sign Up</a>
-        <button className="btn dark">Be Pro</button>
-        <button className="btn light">Submit Website</button>
-      </div>
-    </div>
+    </nav>
   );
 };
 
