@@ -10,7 +10,7 @@
 }
 
 .featured-section .featured-card {
-  text-align: center;
+  text-align: center; 
   margin-bottom: 1.5rem;
 }
 
@@ -31,5 +31,5 @@
   margin-top: 2rem;
   color: #000;
   text-align: left;
-  
+
 }
