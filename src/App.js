@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import ProductGrid from './components/ProductGrid';
 import MembershipPromo from './components/MenbershipPromo';
 import TheLatestSection from './components/TheLatestSection';
+import FeaturedSection from './components/FeaturedSection';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <HeroSection />
       <Faith />
       <TheLatestSection />
+      <FeaturedSection />
       <ProductGrid />
       <Footer />
       
