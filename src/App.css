@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(to bottom, #08060C, #1b132a); /* Dark to lighter purple */
+  color: white;  min-height: 100vh;
+}
+
+.gradient-btn {
+  background: linear-gradient(to right, #a855f7, #ec4899);
+  border: none;
+}
+
+.hero-section {
+  padding: 120px 20px;
+  min-height: 100vh;
+}
+
+.hero-title {
+  color: #d3d3d3;
+}
+
+.event-banner {
+  background-color: #2b2b2b;
+  color: white;
+  display: inline-block;
+  font-size: 0.9rem;
+}
