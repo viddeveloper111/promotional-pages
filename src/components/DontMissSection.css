@@ -1,0 +1,23 @@
+.dont-miss-section .section-title {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 4rem;
+  color: #000; 
+}
+
+.dont-miss-section .dont-miss-card {
+  text-align: center; 
+  margin-bottom: 1.5rem; 
+  box-sizing: border-box;
+}
+
+.dont-miss-section .dont-miss-card img {
+  border-radius: 0;
+  max-width: 100%;
+  display: block;
+  width: 100%; 
+  height: 650px;
+  object-fit: cover;
+}
