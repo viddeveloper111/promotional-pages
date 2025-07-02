@@ -1,0 +1,120 @@
+.my-navbar {
+  background-color: white;
+  padding: 12px 24px;
+  z-index: 100;
+  position: sticky;
+  height: 80px;
+  top: 0;
+  border-top-left-radius: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+
+.my-navbar:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.my-navbar img {
+  margin-left: -30px;
+  height: 40px;
+  width: 70px;
+  padding: 2px;
+  background-color: transparent;
+}
+
+.my-navbar .nav-link {
+  color: #282c3f;
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 20px;
+  transition: color 0.2s ease;
+}
+
+.my-navbar .nav-link:hover {
+  color: #ff3f6c;
+  text-decoration: none;
+}
+
+.my-navbar .input {
+  width: 250px;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.nav-icons {
+  margin-left: 25px;
+  gap: 0rem;
+}
+
+.nav-label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .my-navbar .form-control {
+    margin-right: 20px;
+    width: 150px;
+  }
+
+  .my-navbar .nav-link {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .nav-icons {
+    font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+.search-container {
+  position: relative;
+  width: 400px;
+}
+
+.search-input {
+  padding-left: 40px;
+  background-color: #eae8e8;
+  color: #777273;
+  border: none;
+  height: 38px;
+  font-size: 14px;
+  
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+
+.search-input:hover {
+  box-shadow: 0 0 8px rgba(255, 63, 108, 0.4); 
+}
+
+
+.search-input:focus {
+  background-color: #ffffff;
+  border-color: #ff3f6c;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 63, 108, 0.5);
+}
+
+.search-container::before {
+  content: '\f002';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: gray;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.search-input::placeholder {
+  padding-left: 0px;
+  color: #949292;
+}
+

@@ -1,0 +1,76 @@
+.category h3 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ff5d00; 
+  font-family: 'Arial Black', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 40px 0;
+}
+
+.category-img {
+  object-position: top;
+  width: 100%;
+  height:150px;
+  object-fit: cover;
+  border-bottom: 1px solid black;
+  margin-bottom: 8px;
+}
+
+
+.category-wrapper {
+  padding: 40px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+.category-card {
+  width: 150px;
+  height: 230px;
+  background-color: #fa94df;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid #fa94df;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.center{
+  
+  text-align: center;
+  font-size: 55px;
+  font-weight: lighter;
+  
+  color: #f97325; 
+ font-family: 'CopperPlate',Fantasy;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 40px 0;
+}
+.category-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cat-name {
+  font-weight: bold;
+  font-size: 12px;
+  margin: -5px 0;
+}
+
+.cat-offer {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0px 0;
+}
+
+.cat-shop {
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+}

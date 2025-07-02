@@ -1,0 +1,149 @@
+.product-details-container {
+  padding: 30px;
+}
+
+.product-main {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.product-image img {
+  width: 400px;
+  border: none;
+}
+
+.product-info {
+  max-width: 500px;
+}
+.product-info p6 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #575555;
+  margin-top: 10px;
+}
+
+.product-info p7 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #289a2f;
+  margin-top: 10px;
+}
+
+.similar-product {
+    padding: 20px;
+  display: flex;
+  gap: 40px; 
+}
+
+
+.similar-product-card {
+    
+  width: 220px;
+  height: 340px;
+  text-align: left;
+  overflow: hidden;
+  background-color: transparent;
+  box-sizing: border-box; 
+}
+
+.similar-product-card:hover {
+  box-shadow: 0 16px 32px rgba(70, 69, 69, 0.1);
+  
+}
+
+.similar-product-link {
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;     
+  width: 220px;
+}
+
+.similar-product-card img {
+  width: 100%;              
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.similar-product-card h3 {
+  margin-top: 8px;
+  margin-left: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.similar-product-card p {
+  margin-top: -5px;
+  font-size: 13px;
+  font-weight: 380;
+  color: #555;
+  margin-left: 8px;
+  margin-bottom: 1px;
+}
+
+.similar-product-card p1 {
+  font-size: 13px;
+  font-weight: 650;
+  color: #040404;
+  margin-left: 8px;
+}
+
+.similar-product-card p2 {
+  font-weight: lighter;
+  font-size: 11px;
+  color: #fd8c30;
+  margin: 10px 0;
+}
+
+.similar-product-card s {
+  font-weight: lighter;
+  font-size: 11px;
+  color: #373635;
+  margin: 10px 0;
+}
+
+.product-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-cart {
+  width: 150px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #fd446f;
+  color: white;
+}
+
+.btn-cart:hover {
+  background-color: #f86489;
+}
+
+.btn-wishlist {
+  height: 50px;
+  font-weight: 500;
+  border: 1px solid #cfcece;
+  width: 140px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #1d1d1d;
+}
+
+.btn-wishlist:hover {
+  border: 1px solid #6f6e6e;
+}
+
+.sim {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
