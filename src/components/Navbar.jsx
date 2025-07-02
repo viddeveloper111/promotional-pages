@@ -100,7 +100,7 @@ const AppNavbar = () => {
               <Nav.Link href="#resources" style={getNavLinkStyle('resources')}>Resources</Nav.Link>
               {showResourcesDropdown && <ResourcesDropdown />}
             </div>
-            <Nav.Link href="#pricing" style={getNavLinkStyle('pricing')} onMouseEnter={() => setHoveredLink('pricing')} onMouseLeave={() => setHoveredLink(null)}>Pricing</Nav.Link>
+            <Link to="/pricing" style={getNavLinkStyle('pricing')} onMouseEnter={() => setHoveredLink('pricing')} onMouseLeave={() => setHoveredLink(null)}>Pricing</Link>
             <Link to="/customers" style={getNavLinkStyle('customers')} onMouseEnter={() => setHoveredLink('customers')} onMouseLeave={() => setHoveredLink(null)}>Customers</Link>
             <Link to="/blog" style={getNavLinkStyle('blog')} onMouseEnter={() => setHoveredLink('blog')} onMouseLeave={() => setHoveredLink(null)}>Blog</Link>
             <Link to="/contact" style={getNavLinkStyle('contact')} onMouseEnter={() => setHoveredLink('contact')} onMouseLeave={() => setHoveredLink(null)}>Contact</Link>

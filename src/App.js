@@ -4,6 +4,7 @@ import LandingPage from './pages/LandingPage';
 import ContactPage from './pages/ContactPage';
 import BlogPage from './pages/BlogPage';
 import CustomersPage from './pages/CustomersPage';
+import PricingPage from './pages/PricingPage';
 
 function App(){
   return (
@@ -13,6 +14,7 @@ function App(){
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/customers" element={<CustomersPage />} />
+        <Route path="/pricing" element={<PricingPage />} />
       </Routes>
     </Router>
   );
