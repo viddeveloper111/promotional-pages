@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
@@ -28,6 +28,8 @@ const logos = [
 ];
 
 const LogoCloud = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
   const sectionStyle = {
     backgroundColor: '#000',
     padding: '80px 0',
@@ -40,11 +42,17 @@ const LogoCloud = () => {
     fontSize: '1rem',
   };
 
+  const scrollerWrapperStyle = {
+    position: 'relative',
+  };
+
   const logoScrollerStyle = {
     maxWidth: '100%',
     overflow: 'hidden',
     WebkitMaskImage: 'linear-gradient(to right, transparent, white 20%, white 80%, transparent)',
     maskImage: 'linear-gradient(to right, transparent, white 20%, white 80%, transparent)',
+    filter: isHovered ? 'blur(5px)' : 'none',
+    transition: 'filter 0.3s ease',
   };
 
   const logoScrollerInnerStyle = {
@@ -57,6 +65,28 @@ const LogoCloud = () => {
     height: '50px',
     filter: 'grayscale(1) brightness(1.5)',
     opacity: 0.8,
+  };
+
+  const hoverContentStyle = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    opacity: isHovered ? 1 : 0,
+    transition: 'opacity 0.3s ease',
+    pointerEvents: isHovered ? 'auto' : 'none',
+  };
+
+  const buttonStyle = {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    border: '1px solid rgba(255, 255, 255, 0.2)',
+    borderRadius: '20px',
+    color: 'white',
+    padding: '10px 20px',
+    textDecoration: 'none',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '8px',
   };
 
   const keyframes = `
@@ -74,14 +104,25 @@ const LogoCloud = () => {
         <Row>
           <Col>
             <div style={titleStyle}>Powering the world's best product teams</div>
-            <div style={logoScrollerStyle}>
-              <div style={logoScrollerInnerStyle}>
-                {logos.map((logo, index) => (
-                  <img src={logo} alt={`logo-${index}`} key={index} style={logoItemStyle} />
-                ))}
-                {logos.map((logo, index) => (
-                  <img src={logo} alt={`logo-duplicate-${index}`} key={`duplicate-${index}`} style={logoItemStyle} />
-                ))}
+            <div 
+              style={scrollerWrapperStyle} 
+              onMouseEnter={() => setIsHovered(true)} 
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              <div style={logoScrollerStyle}>
+                <div style={logoScrollerInnerStyle}>
+                  {logos.map((logo, index) => (
+                    <img src={logo} alt={`logo-${index}`} key={index} style={logoItemStyle} />
+                  ))}
+                  {logos.map((logo, index) => (
+                    <img src={logo} alt={`logo-duplicate-${index}`} key={`duplicate-${index}`} style={logoItemStyle} />
+                  ))}
+                </div>
+              </div>
+              <div style={hoverContentStyle}>
+                <a href="/customers" style={buttonStyle}>
+                  Meet our customers &gt;
+                </a>
               </div>
             </div>
           </Col>
