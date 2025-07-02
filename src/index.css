@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+:root{
+  --bs-body-font-family: 'Inter', sans-serif;
+  --bs-body-bg: #0e0e10;
+  --bs-body-color: #ffffff;
+}
+body{
+  margin:0;
+}
+
+section, .trusted-section, .hero-section, .container {
+  background: #000 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+section, .trusted-section {
+  margin: 0 !important;
+  padding-bottom: 0 !important;
+  border: none !important;
+}
+
+.hero-img {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+

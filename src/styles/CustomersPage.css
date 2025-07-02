@@ -1,0 +1,73 @@
+.customers-page {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.page-header {
+  padding: 120px 0 80px;
+}
+
+.page-header h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.page-header .subtitle {
+  font-size: 1.25rem;
+  color: #b3b3b3;
+  margin-bottom: 30px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.make-switch {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  background: -webkit-linear-gradient(left,#c278f8,#8478f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.customer-card {
+  background-color: #0a0a0a;
+  border: 1px solid #222;
+  border-radius: 12px;
+  color: #fff;
+  padding: 40px;
+  height: 350px;
+  background-size: 150%;
+  background-position: top right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-size 0.3s ease;
+}
+
+.customer-card:hover {
+    background-size: 160%;
+}
+
+.card-icon img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: auto;
+}
+
+.customer-card .card-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
+
+.customer-card .card-text {
+  color: #888;
+  font-size: 1rem;
+  font-weight: 500;
+}
